@@ -4,6 +4,7 @@
 
 /* Header */
 
+/* Pour le logo et le nom du magasin */
 header div {
     border: 3px solid black;
     font-family: Montserrat;
@@ -12,6 +13,7 @@ header div {
     background-color: black;
 }
 
+/* Pour les onglets */
 header div nav a {
     text-decoration: none;
     color: white;
@@ -23,12 +25,77 @@ header div nav a {
     border-radius: 8px;
 }
 
+/* Pour que les boutons s'alumment en passant dessus avec la souris */
 header div nav a:hover {
     background-color: rgb(126, 241, 168);
     color: black;
 }
 
+/* Pour le titre principal de la page web */
 h1 {
     text-align: center;
     font-family: Montserrat;
+}
+
+/* Main */
+
+/* Contenu principal de la page */
+main {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+/* Contenu de l'article en question */
+main div {
+    display: block;
+    background-color: rgb(126, 241, 168);
+    width: 25%;
+    height: 600px;
+    margin: 5rem 5rem 5rem 5rem;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    font-family: Montserrat;
+    font-size: large;
+    border-radius: 8px;
+}
+
+/* Image pour illustrer l'article */
+main div img {
+    display: block;
+    border: 3px solid black;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Bouton ajouter au panier */
+main div a {
+    display: block;
+    width: 45%;
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: large;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    justify-content: flex-start;
+    background-color: rgb(57, 112, 241);
+    border-radius: 8px;
+}
+
+/* Prix de l'article en question */
+main div p:last-child {
+    display: block;
+    width: 45%;
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    font-size: large;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    justify-content: flex-end;
+    background-color: rgb(146, 57, 241);
+    border-radius: 8px;
 }
