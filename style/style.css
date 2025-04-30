@@ -1,0 +1,163 @@
+/* Importation de la police d'écriture */
+
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Delius:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Header */
+
+/* Pour le logo et le nom du magasin */
+header div {
+    width: 100%;
+    font-family: Delius;
+    text-align: center;
+    color: white;
+    background-color: #020738;
+}
+
+/* Pour le logo dans le header */
+header div img {
+    margin: 0.5rem 2rem 3rem 2rem;
+}
+
+/* Pour les onglets */
+header div nav a {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: #93ABB6;
+    font-family: Delius;
+    font-size: x-large;
+    margin: 5rem 5rem;
+}
+
+/* Pour que les boutons s'alumment en passant dessus avec la souris */
+header div nav a:hover {
+    color: #0691B2;
+}
+
+/* Pour le titre principal de la page web */
+h1 {
+    text-align: center;
+    font-family: Delius;
+}
+
+/* Main */
+
+/* Contenu principal de la page */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #020738;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+/* Contenu de l'article en question */
+.contenu {
+    display: block;
+    background-color: #0691B2;
+    width: 25%;
+    height: auto;
+    color: white;
+    margin: 3rem 3rem 3rem 2rem;
+    padding: 0.5rem 1rem 1rem 1.25rem;
+    font-family: Delius;
+    font-size: large;
+    border-radius: 8px;
+}
+
+/* Image pour illustrer l'article */
+.contenu-image {
+    border: 3px solid #020738;
+    margin: 0 auto;
+    background-color: #A63949;
+    height: 25rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Bouton ajouter au panier */
+.contenu-btn-ajout-panier {
+    display: block;
+    width: 40%;
+    height: 10%;
+    text-decoration: none;
+    color: #020738;
+    font-family: Delius;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.6rem 0.6rem;
+    justify-content: flex-start;
+    background-color: #C6BF10;
+    border-radius: 8px;
+}
+
+/* Prix de l'article en question */
+.contenu-prix {
+    display: inline-flexbox;
+    width: 45%;
+    text-decoration: none;
+    color: white;
+    font-family: Delius;
+    font-size: large;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    justify-content: flex-end;
+    background-color: #93ABB6;
+    border-radius: 8px;
+}
+
+div div:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+/* Contenu principal du Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    color: #020738;
+    background-color: #93ABB6;
+}
+
+.ligneFooter1 {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Pour le contenu de la div en général */
+/* footer div {
+    display: block;
+} */
+
+/* Pour la carte */
+footer div iframe {
+    display: inline-block;
+    margin-top: 1.75rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+/* Pour les paragraphes */
+footer div p {
+    display: inline-block;
+    font-family: Delius;
+    font-size: x-large;
+    margin-top: 3.5rem;
+}
+
+.cgu{
+    display: block;
+    width: 100%;
+    height: auto;
+    font-family: Delius;
+    font-size: small;
+    background-color: #93ABB6;
+    text-align: center;
+}
