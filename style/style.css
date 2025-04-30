@@ -48,12 +48,12 @@ main {
 }
 
 /* Contenu de l'article en question */
-main div {
+.contenu {
     display: block;
     background-color: rgb(126, 241, 168);
     width: 25%;
     height: 600px;
-    margin: 5rem 5rem 5rem 2.5rem;
+    margin: 4rem 4rem 4rem 2.5rem;
     padding: 0.5rem 1.25rem 1.25rem 1.25rem;
     font-family: Montserrat;
     font-size: large;
@@ -61,32 +61,33 @@ main div {
 }
 
 /* Image pour illustrer l'article */
-main div img {
-    display: block;
+.contenu-image {
     border: 3px solid black;
     margin: 0 auto;
     background-color: white;
+    text-align: center;
 }
 
 /* Bouton ajouter au panier */
-main div a {
-    display: inline;
-    width: 45%;
+.contenu-btn-ajout-panier {
+    display: block;
+    width: 40%;
+    height: 10%;
     text-decoration: none;
     color: white;
     font-family: Montserrat;
-    font-size: large;
+    font-size: 16px;
     text-align: center;
     margin-top: 2rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0.6rem 0.6rem;
     justify-content: flex-start;
     background-color: rgb(57, 112, 241);
     border-radius: 8px;
 }
 
 /* Prix de l'article en question */
-main div p:last-child {
-    display: block;
+.contenu-prix {
+    display: inline-flexbox;
     width: 45%;
     text-decoration: none;
     color: white;
@@ -115,5 +116,8 @@ footer div {
 
 footer div iframe {
     margin-left: 2.5rem;
-    justify-content: center;
+}
+
+footer div p {
+    align-content: center;
 }
