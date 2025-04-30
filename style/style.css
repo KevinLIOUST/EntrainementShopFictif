@@ -1,13 +1,13 @@
 /* Importation de la police d'écriture */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Delius:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Header */
 
 /* Pour le logo et le nom du magasin */
 header div {
     width: 100%;
-    font-family: Montserrat;
+    font-family: Delius;
     text-align: center;
     color: white;
     background-color: #020738;
@@ -24,7 +24,7 @@ header div nav a {
     height: auto;
     text-decoration: none;
     color: #93ABB6;
-    font-family: Montserrat;
+    font-family: Delius;
     font-size: x-large;
     margin: 5rem 5rem;
 }
@@ -37,7 +37,7 @@ header div nav a:hover {
 /* Pour le titre principal de la page web */
 h1 {
     text-align: center;
-    font-family: Montserrat;
+    font-family: Delius;
 }
 
 /* Main */
@@ -61,7 +61,7 @@ main {
     color: white;
     margin: 3rem 3rem 3rem 2rem;
     padding: 0.5rem 1rem 1rem 1.25rem;
-    font-family: Montserrat;
+    font-family: Delius;
     font-size: large;
     border-radius: 8px;
 }
@@ -83,7 +83,7 @@ main {
     height: 10%;
     text-decoration: none;
     color: #020738;
-    font-family: Montserrat;
+    font-family: Delius;
     font-size: 16px;
     text-align: center;
     margin-top: 2rem;
@@ -99,7 +99,7 @@ main {
     width: 45%;
     text-decoration: none;
     color: white;
-    font-family: Montserrat;
+    font-family: Delius;
     font-size: large;
     text-align: center;
     margin-top: 2rem;
@@ -147,7 +147,7 @@ footer div iframe {
 /* Pour les paragraphes */
 footer div p {
     display: inline-block;
-    font-family: Montserrat;
+    font-family: Delius;
     font-size: x-large;
     margin-top: 3.5rem;
 }
@@ -156,7 +156,7 @@ footer div p {
     display: block;
     width: 100%;
     height: auto;
-    font-family: Montserrat;
+    font-family: Delius;
     font-size: small;
     background-color: #93ABB6;
     text-align: center;
