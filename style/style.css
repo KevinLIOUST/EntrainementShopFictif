@@ -119,20 +119,26 @@ div div:nth-child(5) {
 /* Contenu principal du Footer */
 footer {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: auto;
     color: #020738;
     background-color: #93ABB6;
 }
 
-/* Pour le contenu de la div en général */
-footer div {
-    display: block;
+.ligneFooter1 {
+    display: flex;
+    flex-direction: row;
 }
+
+/* Pour le contenu de la div en général */
+/* footer div {
+    display: block;
+} */
 
 /* Pour la carte */
 footer div iframe {
-    display: flex;
+    display: inline-block;
     margin-top: 1.75rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -144,10 +150,14 @@ footer div p {
     font-family: Montserrat;
     font-size: x-large;
     margin-top: 3.5rem;
-    margin-left: 15rem;
 }
 
-footer p {
-    display: inline-block;
+.cgu{
+    display: block;
+    width: 100%;
+    height: auto;
     font-family: Montserrat;
+    font-size: small;
+    background-color: #93ABB6;
+    text-align: center;
 }
