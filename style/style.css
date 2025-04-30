@@ -6,29 +6,36 @@
 
 /* Pour le logo et le nom du magasin */
 header div {
-    border: 3px solid black;
+    width: 100%;
     font-family: Montserrat;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color: #020738;
+}
+
+/* Pour le logo dans le header */
+header div img {
+    margin: 0.5rem 2rem 3rem 2rem;
 }
 
 /* Pour les onglets */
 header div nav a {
+    width: 100%;
+    height: auto;
     text-decoration: none;
     color: white;
     font-family: Montserrat;
     font-size: x-large;
     margin: 5rem 5rem;
     padding: 1rem 1rem;
-    background-color: red;
+    background-color: #A63949;
     border-radius: 8px;
 }
 
 /* Pour que les boutons s'alumment en passant dessus avec la souris */
 header div nav a:hover {
-    background-color: rgb(126, 241, 168);
-    color: black;
+    background-color: #0691B2;
+    color: white;
 }
 
 /* Pour le titre principal de la page web */
@@ -43,7 +50,7 @@ h1 {
 main {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #020738;
     width: 100%;
     height: auto;
     justify-content: center;
@@ -52,9 +59,10 @@ main {
 /* Contenu de l'article en question */
 .contenu {
     display: block;
-    background-color: rgb(126, 241, 168);
+    background-color: #0691B2;
     width: 25%;
     height: auto;
+    color: white;
     margin: 3rem 3rem 3rem 2rem;
     padding: 0.5rem 1rem 1rem 1.25rem;
     font-family: Montserrat;
@@ -64,9 +72,9 @@ main {
 
 /* Image pour illustrer l'article */
 .contenu-image {
-    border: 3px solid black;
+    border: 3px solid #020738;
     margin: 0 auto;
-    background-color: rgb(146, 57, 241);
+    background-color: #A63949;
     height: 25rem;
     text-align: center;
     vertical-align: middle;
@@ -78,14 +86,14 @@ main {
     width: 40%;
     height: 10%;
     text-decoration: none;
-    color: white;
+    color: #020738;
     font-family: Montserrat;
     font-size: 16px;
     text-align: center;
     margin-top: 2rem;
     padding: 0.6rem 0.6rem;
     justify-content: flex-start;
-    background-color: rgb(57, 112, 241);
+    background-color: #C6BF10;
     border-radius: 8px;
 }
 
@@ -101,7 +109,7 @@ main {
     margin-top: 2rem;
     padding: 0.5rem 0.5rem;
     justify-content: flex-end;
-    background-color: red;
+    background-color: #93ABB6;
     border-radius: 8px;
 }
 
@@ -112,21 +120,35 @@ div div:nth-child(5) {
 
 /* Footer */
 
+/* Contenu principal du Footer */
 footer {
+    display: flex;
     width: 100%;
     height: 400px;
-    color: white;
-    background-color: black;
+    color: #020738;
+    background-color: #93ABB6;
 }
 
+/* Pour le contenu de la div en général */
 footer div {
-    display: flex;
+    display: block;
+    border: 3px solid #0691B2;
 }
 
+/* Pour la carte */
 footer div iframe {
+    display: flex;
+    margin-top: 1.75rem;
     margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
+/* Pour les paragraphes */
 footer div p {
-    align-content: center;
+    display: inline-block;
+    border: 3px solid #0691B2;
+    font-family: Montserrat;
+    font-size: x-large;
+    vertical-align: middle;
+    margin-left: 15rem;
 }
