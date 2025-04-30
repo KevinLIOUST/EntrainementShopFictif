@@ -42,9 +42,11 @@ h1 {
 /* Contenu principal de la page */
 main {
     display: flex;
+    flex-wrap: wrap;
     background-color: black;
     width: 100%;
     height: auto;
+    justify-content: center;
 }
 
 /* Contenu de l'article en question */
@@ -52,9 +54,9 @@ main {
     display: block;
     background-color: rgb(126, 241, 168);
     width: 25%;
-    height: 600px;
-    margin: 4rem 4rem 4rem 2.5rem;
-    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    height: auto;
+    margin: 3rem 3rem 3rem 2rem;
+    padding: 0.5rem 1rem 1rem 1.25rem;
     font-family: Montserrat;
     font-size: large;
     border-radius: 8px;
@@ -64,8 +66,10 @@ main {
 .contenu-image {
     border: 3px solid black;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(146, 57, 241);
+    height: 25rem;
     text-align: center;
+    vertical-align: middle;
 }
 
 /* Bouton ajouter au panier */
@@ -97,8 +101,13 @@ main {
     margin-top: 2rem;
     padding: 0.5rem 0.5rem;
     justify-content: flex-end;
-    background-color: rgb(146, 57, 241);
+    background-color: red;
     border-radius: 8px;
+}
+
+div div:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Footer */
