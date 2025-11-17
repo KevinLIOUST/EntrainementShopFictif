@@ -8,9 +8,12 @@
 header div {
     width: 100%;
     font-family: Delius;
-    text-align: center;
     color: white;
-    background-color: #020738;
+    background-color: #93abb6;
+}
+
+nav {
+    background-color: #93abb6;
 }
 
 /* Pour le logo dans le header */
@@ -19,18 +22,17 @@ header div img {
 }
 
 /* Pour les onglets */
-header div nav a {
+header div a {
     width: 100%;
     height: auto;
     text-decoration: none;
-    color: #93ABB6;
+    color: #020738;
     font-family: Delius;
     font-size: x-large;
-    margin: 5rem 5rem;
 }
 
 /* Pour que les boutons s'alumment en passant dessus avec la souris */
-header div nav a:hover {
+header div a:hover {
     color: #0691B2;
 }
 
@@ -40,16 +42,64 @@ h1 {
     font-family: Delius;
 }
 
+h2 {
+    text-align: center;
+    font-family: Delius;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.div-livraison {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-color-nave-blue {
+    background-color: #020738;
+}
+
 /* Main */
 
+body {
+    font-family: Delius;
+}
+
 /* Contenu principal de la page */
-main {
+.grille-articles {
     display: flex;
     flex-wrap: wrap;
     background-color: #020738;
     width: 100%;
     height: auto;
     justify-content: center;
+}
+
+.container {
+  /* display: flex;
+  flex-wrap: wrap;
+  width: 100%; */
+
+  /* On fait un repeat(auto-fit, minmax(...)) pour un wrapping fluide */
+  /* grid-template-columns: 33% 33% 33%; */
+  /* gap: 5px; */
+}
+
+.div-article {
+  margin: 2rem;
+  border-radius: 16px;
+  background-color: #45f0df;
+}
+
+.bg-article {
+  height: 100%;
+  background-color: #0691B2;
+  color: white;
 }
 
 /* Contenu de l'article en question */
@@ -59,7 +109,10 @@ main {
     width: 25%;
     height: auto;
     color: white;
-    margin: 3rem 3rem 3rem 2rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
     padding: 0.5rem 1rem 1rem 1.25rem;
     font-family: Delius;
     font-size: large;
@@ -70,8 +123,11 @@ main {
 .contenu-image {
     border: 3px solid #020738;
     margin: 0 auto;
+    padding: 2rem;
     background-color: #A63949;
-    height: 25rem;
+    border-radius: 8px;
+    /* height: 25rem; */
+    /* width: auto; */
     text-align: center;
     vertical-align: middle;
 }
@@ -79,14 +135,15 @@ main {
 /* Bouton ajouter au panier */
 .contenu-btn-ajout-panier {
     display: block;
-    width: 40%;
+    width: 45%;
     height: 10%;
     text-decoration: none;
     color: #020738;
     font-family: Delius;
-    font-size: 16px;
+    font-size: 10px;
     text-align: center;
-    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0.6rem 0.6rem;
     justify-content: flex-start;
     background-color: #C6BF10;
@@ -97,22 +154,25 @@ main {
 .contenu-prix {
     display: inline-flexbox;
     width: 45%;
+    height: 10%;
     text-decoration: none;
     color: white;
     font-family: Delius;
-    font-size: large;
+    font-size: 10px;
     text-align: center;
     margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0.5rem 0.5rem;
     justify-content: flex-end;
     background-color: #93ABB6;
     border-radius: 8px;
 }
 
-div div:nth-child(5) {
+/* div div:nth-child(5) {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* Footer */
 
@@ -149,7 +209,7 @@ footer div p {
     display: inline-block;
     font-family: Delius;
     font-size: x-large;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
 }
 
 .cgu{

@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Fictif</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Lien vers Bootstrap -->
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Lien vers les icônes Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"> -->
+
+    <!-- Lien vers le fichier css -->
     <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -14,182 +23,241 @@
 
     <!-- Header pour le logo, le nom du magasin et les onglets -->
     <header>
-
-        <!-- div pour le logo, le nom du magasin et les onglets -->
-        <div>
-            <h1>Otaku Shop</h1>
-            <img src="img/Logo_shop4.png" alt="Logo_shop4.png">
-
-            <nav>
-                <a href="url">Mangas</a>
-                <a href="url">Jeux Vidéos</a>
-                <a href="url">Figurines</a>
-            </nav>
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="px-4 p-2">
+                <a href="#">Mangas</a>
+            </div>
+            <div class="px-4 p-2">
+                <a href="#">Jeux vidéos</a>
+            </div>
+            <div class="px-4 p-2">
+                <a href="#">Figurines</a>
+            </div>
         </div>
     </header>
 
     <!-- Main pour le contenu principal de la page -->
     <main>
 
+        <div class="d-flex justify-content-center text-white bg-color-nave-blue pt-3">
+            <h1><b>Otaku Shop</b></h1>
+        </div>
+
+        <!-- Logo du magasin -->
+        <div class="d-flex justify-content-center bg-color-nave-blue pt-3 pb-3">
+            <img src="img/Logo_shop4.png" alt="Logo_shop4.png">
+        </div>
+
+        <div class="d-flex justify-content-center bg-color-nave-blue text-white">
+            <h2>Bienvenue dans notre magasin spécial geek : Otaku Shop ! Ici, vous trouverez votre
+                bonheur partout à des
+                prix
+                cassés ! Amusez-vous bien, mais faîtes attention à votre argent !</h2>
+        </div>
+
+        <div class="d-flex justify-content-center bg-color-nave-blue text-white pt-3">
+            <h3>Livraison possible partout au Japon !</h3>
+        </div>
+
+        <div class="d-flex justify-content-center bg-color-nave-blue flex-wrap">
+            <img class="m-5" src="img/Entreprise Livraison 2_2.png" alt="img/Entreprise Livraison 2_2.png">
+            <img class="m-5" src="img/Entreprise Livraison 3_2.png" alt="img/Entreprise Livraison 3_2.png">
+        </div>
+
+        <div class="d-flex justify-content-center bg-color-nave-blue text-white">
+            <h3>Liste de tous les articles disponibles :</h3>
+        </div>
+
         <!-- div pour chaque article -->
-        <div class="contenu">
-            <div>
-                <p>Manga</p>
+        <div class="grille-articles">
+            <div class="div-article m-3 p-3">
+                <div class="card bg-article p-3">
+                    <p>Manga</p>
+                    <div class="contenu-image">
+                        <img src="img/FairyTail-Volume_1_Cover.jpg" class="card-img-top"
+                            alt="img/FairyTail-Volume_1_Cover.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="mt-2"><b>Nom : </b>Manga</p>
+                        <div>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="contenu-prix">3€</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contenu-image">
-                <img src="img/FairyTail-Volume_1_Cover.jpg" alt="FairyTail-Volume_1_Cover.png">
+            <div class="div-article m-3 p-3">
+                <div class="card bg-article p-3">
+                    <p>Manga</p>
+                    <div class="contenu-image">
+                        <img src="img/Edens_Zero_Volume_1_Cover.jpg" class="card-img-top"
+                            alt="img/Edens_Zero_Volume_1_Cover.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="mt-2"><b>Nom : </b>Manga</p>
+                        <div>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="contenu-prix">3€</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Hiro Mashima - FairyTail - Tome 1</p>
+            <div class="div-article m-3 p-3">
+                <div class="card bg-article p-3">
+                    <p>Manga</p>
+                    <div class="contenu-image">
+                        <img src="img/Rave_Master_Volume_1.jpg" class="card-img-top" alt="img/Rave_Master_Volume_1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="mt-2"><b>Nom : </b>Manga</p>
+                        <div>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="contenu-prix">3€</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span>(18)</span>
+            <div class="div-article m-3 p-3">
+                <div class="card bg-article p-3">
+                    <p>Manga</p>
+                    <div class="contenu-image">
+                        <img src="img/Dead_Rock_vol_01.png" class="card-img-top" alt="img/Dead_Rock_vol_01.png">
+                    </div>
+                    <div class="card-body">
+                        <p class="mt-2"><b>Nom : </b>Manga</p>
+                        <div>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="contenu-prix">3€</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
-                <p class="contenu-prix">3€</p>
+            <div class="div-article m-3 p-3">
+                <div class="card bg-article p-3">
+                    <p>Manga</p>
+                    <div class="contenu-image">
+                        <img src="img/Mashima_Heroes_cover.jpg" class="card-img-top" alt="img/Mashima_Heroes_cover.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="mt-2"><b>Nom : </b>Manga</p>
+                        <div>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="contenu-prix">3€</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="contenu">
-            <div>
-                <p>Manga</p>
-            </div>
-            <div class="contenu-image">
-                <img src="img/Edens_Zero_Volume_1_Cover.jpg" alt="Edens_Zero_Volume_1_Cover.jpg">
-            </div>
-            <div>
-                <p>Hiro Mashima - Edens Zero - Tome 1</p>
-            </div>
-            <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span>(18)</span>
-            </div>
-            <div>
-                <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
-                <p class="contenu-prix">3€</p>
-            </div>
-        </div>
-        <div class="contenu">
-            <div>
-                <p>Manga</p>
-            </div>
-            <div class="contenu-image">
-                <img src="img/Rave_Master_Volume_1.jpg" alt="Rave_Master_Volume_1.jpg">
-            </div>
-            <div>
-                <p>Hiro Mashima - Rave Master - Tome 1</p>
-            </div>
-            <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span>(18)</span>
-            </div>
-            <div>
-                <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
-                <p class="contenu-prix">3€</p>
-            </div>
-        </div>
-        <div class="contenu">
-            <div>
-                <p>Manga</p>
-            </div>
-            <div class="contenu-image">
-                <img src="img/Dead_Rock_vol_01.png" alt="Dead_Rock_vol_01.png">
-            </div>
-            <div>
-                <p>Hiro Mashima - Dead Rock - Tome 1</p>
-            </div>
-            <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span>(18)</span>
-            </div>
-            <div>
-                <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
-                <p class="contenu-prix">3€</p>
-            </div>
-        </div>
-        <div class="contenu">
-            <div>
-                <p>Manga</p>
-            </div>
-            <div class="contenu-image">
-                <img src="img/Mashima_Heroes_cover.jpg" alt="Mashima_Heroes_cover.jpg">
-            </div>
-            <div>
-                <p>Hiro Mashima - Dead Rock - Tome 1</p>
-            </div>
-            <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span>(18)</span>
-            </div>
-            <div>
-                <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
-                <p class="contenu-prix">3€</p>
-            </div>
-        </div>
-        <div class="contenu">
-            <div>
-                <p>Manga</p>
-            </div>
-            <div class="contenu-image">
-                <img src="img/Fairy_Tail_100_Years_Quest_Vol_1.jpg" alt="Fairy_Tail_100_Years_Quest_Vol_1.jpg">
-            </div>
-            <div>
-                <p>Hiro Mashima - FairyTail 100 Years Quest - Tome 1</p>
-            </div>
-            <div>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <span>(18)</span>
-            </div>
-            <div>
-                <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
-                <p class="contenu-prix">3€</p>
+            <div class="div-article m-3 p-3">
+                <div class="card bg-article p-3">
+                    <p>Manga</p>
+                    <div class="contenu-image">
+                        <img src="img/Fairy_Tail_100_Years_Quest_Vol_1.jpg" class="card-img-top"
+                            alt="img/Fairy_Tail_100_Years_Quest_Vol_1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="mt-2"><b>Nom : </b>Manga</p>
+                        <div>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="contenu-prix">3€</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a class="contenu-btn-ajout-panier" href="url">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="ligneFooter1">
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12958.90301114836!2d139.74851645824398!3d35.7083658064092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1d09cd165f%3A0x880b66fa0d9210bd!2sComic%20ZIN%20Akihabara!5e0!3m2!1sfr!2sjp!4v1745939658813!5m2!1sfr!2sjp"
-                    width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div>
-                <p>Otaku Shop Comic ZIN Akihabara</p>
-                <p>〒101-0021 Tokyo, Chiyoda City, Sotokanda, 1 Chome−11−7 高和秋葉原ビル</p>
-                <p>Tel : 03-5298-5392</p>
-            </div>
+    <footer class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12958.90301114836!2d139.74851645824398!3d35.7083658064092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c1d09cd165f%3A0x880b66fa0d9210bd!2sComic%20ZIN%20Akihabara!5e0!3m2!1sfr!2sjp!4v1745939658813!5m2!1sfr!2sjp"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="d-block text-center">
+            <p>Otaku Shop Comic ZIN Akihabara</p>
+            <p>〒101-0021 Tokyo, Chiyoda City, Sotokanda, 1 Chome−11−7 高和秋葉原ビル</p>
+            <p>Tel : 03-5298-5392</p>
         </div>
         <p class="cgu">CGU - Mentions Légales - Otaku Shop Comic ZIN Akihabara</p>
     </footer>
+
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
