@@ -126,8 +126,6 @@ body {
     padding: 2rem;
     background-color: #A63949;
     border-radius: 8px;
-    /* height: 25rem; */
-    /* width: auto; */
     text-align: center;
     vertical-align: middle;
 }
@@ -135,12 +133,12 @@ body {
 /* Bouton ajouter au panier */
 .contenu-btn-ajout-panier {
     display: block;
-    width: 45%;
+    width: 100%;
     height: 10%;
     text-decoration: none;
     color: #020738;
     font-family: Delius;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -153,12 +151,12 @@ body {
 /* Prix de l'article en question */
 .contenu-prix {
     display: inline-flexbox;
-    width: 45%;
+    width: 100%;
     height: 10%;
     text-decoration: none;
     color: white;
     font-family: Delius;
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
     margin-top: 2rem;
     margin-left: 1rem;
